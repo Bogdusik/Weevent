@@ -230,9 +230,11 @@ body::before {
 }
 
 
+/* ################ */
 /* FAQ page styling */
+/* ################ */
 
-/* FAQ page styling */
+/* Header text styling */
 .faqmain {
     margin: 50px auto;
     text-align: center;
@@ -254,7 +256,7 @@ body::before {
 
 /* Collapsible button styles */
 .collapsible {
-    background-color: #2b5730;
+    background-color: #4e7252;
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -267,9 +269,13 @@ body::before {
     border-radius: 5px;
 }
 
+.collapsible:hover{
+    background-color: #2b57307a;
+}
+
 /* Active button styles when clicked */
 .collapsible.active {
-    background-color: #2b57309a;
+    background-color: #2b5730;
 }
 
 /* FAQ Content (hidden by default) */
