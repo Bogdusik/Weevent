@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> Weevents </title> 
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Weevents - FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    </head>
-    
 <body>
+<div class="container">
+    <!-- Header Section -->
     <header class="header">
         <h1 class="logo">Weevents</h1>
         <nav class="nav">
@@ -19,22 +20,18 @@
         </nav>
     </header>
 
-    <style>
-        div#no-background {
-            background-image: none;
-        }
-    </style>
-
-    <main>
+    <!-- Main FAQ Content -->
+    <main class="faq-container"> <!-- FAQ container class for centralizing the content -->
         <div class="faqmain">
             <section>
                 <h3>Your Questions, Answered</h3>
                 <p style="color:rgb(51, 79, 47)">
-                    At Weevents, we aim to help you discover the best events happening around you, tailored to your interests and location. <br>
+                    At Weevents, we aim to help you discover the best events happening around you, tailored to your interests and location.<br>
                     Below are answers to some common questions about our platform and how it works.
                 </p>
 
                 <div class="questions">
+                    <!-- FAQ items with collapsible functionality -->
                     <button type="button" class="collapsible">
                         What is Weevents?
                         <span class="arrow">&#x25BC;</span> <!-- Down arrow -->
@@ -103,15 +100,16 @@
         </div>
     </main>
 
-    <script src="faq.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Weevent - All Rights Reserved.</p>
+        </div>
+    </footer>
+</div> <!-- End of container div -->
 
-    <div class="footer">
-        <footer class="footer">
-            <div class="footer-content">
-                <p>© 2024 Weevent - All Rights Reserved.</p>
-            </div>
-        </footer>
-    </div>
+<!-- External JS for collapsible functionality -->
+<script src="faq.js"></script>
 
 </body>
 </html>
