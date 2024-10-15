@@ -237,7 +237,7 @@ body::before {
     max-width: 1000px;  /* Set a maximum width that fits your design */
     margin: 0 auto;  /* Center the container horizontally */
     padding: 20px;  /* Adds space inside the container */
-    background-color: rgba(255, 255, 255, 0.9);  /* A white background with slight transparency */
+    background-color: rgba(255, 255, 255, 0.26);  /* A white background with slight transparency */
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
     border-radius: 15px;  /* Rounded corners */
     margin-top: 50px;  /* Adds some space from the top */
