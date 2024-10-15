@@ -52,7 +52,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centering the content */
+    align-items: center;
     text-align: center;
     margin: 200px auto;
     padding: 17px;
@@ -60,7 +60,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    flex-grow: 1; /* Allows main section to take up available space */
+    flex-grow: 1;
 }
 
 .main h3 {
@@ -84,7 +84,7 @@ body {
     padding: 5px 15px;
     border-radius: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Full width to help center the input */
+    width: 80%;
 }
 
 .search-bar input {
@@ -142,7 +142,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: auto; /* Pushes the footer to the bottom */
+    margin-top: auto;
 }
 
 .footer-content {
@@ -150,8 +150,6 @@ body {
 }
 
 /* Responsive Styles */
-
-/* For tablets and larger screens */
 @media (max-width: 768px) {
     .hero-section h1 {
         font-size: 28px;
@@ -175,7 +173,6 @@ body {
     }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
     header {
         flex-direction: column;
@@ -229,18 +226,17 @@ body::before {
     opacity: 0.4;
 }
 
-
 /* ################ */
 /* FAQ page styling */
 /* ################ */
 
-/* Header text styling */
+/* FAQ page header */
 .faqmain {
     margin: 50px auto;
     text-align: center;
 }
 
-/* FAQ Background Styling */
+/* FAQ container */
 .questions {
     display: flex;
     flex-direction: column;
@@ -267,9 +263,10 @@ body::before {
     font-size: 15px;
     margin: 5px 0;
     border-radius: 5px;
+    position: relative; /* To position arrow */
 }
 
-.collapsible:hover{
+.collapsible:hover {
     background-color: #2b57307a;
 }
 
@@ -278,15 +275,29 @@ body::before {
     background-color: #2b5730;
 }
 
-/* FAQ Content (hidden by default) */
+/* Arrow icon */
+.arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white;
+}
+
+/* Transition for rotating arrow */
+.collapsible.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Collapsible content styles */
 .content {
     padding: 0 18px;
-    display: none;
+    max-height: 0; /* Initially collapsed */
     overflow: hidden;
     background-color: #2b5730;
     color: white;
     border-radius: 5px;
     margin-bottom: 10px;
+    transition: max-height 0.3s ease-out; /* Smooth transition */
 }
-
-  /* Test */
