@@ -221,16 +221,15 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #9DAFA4 0%, #9DAFA4 30%, #e8f3f5 60%, #dfecef 100%);
     z-index: -1;
     opacity: 0.95;
     background-attachment: fixed;
 }
 
 
-/* ################ */
-/* FAQ page styling */
-/* ################ */
+/* ################################################################################################################ */
+/*                                              FAQ page styling */
+/* ################################################################################################################ */
 
 /* Container specifically for FAQ page */
 .faq-container {
@@ -256,7 +255,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 75px auto;
+    margin: 90px auto;
     padding: 17px;
     max-width: 650px;
     background-color: #4e7252;
