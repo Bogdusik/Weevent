@@ -232,16 +232,17 @@ body::before {
 
 /* FAQ page styling */
 
+/* FAQ page styling */
 .faqmain {
     margin: 50px auto;
     text-align: center;
 }
 
-/* Background for the FAQ page */ 
+/* FAQ Background Styling */
 .questions {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centering the content */
+    align-items: center;
     text-align: center;
     margin: 75px auto;
     padding: 17px;
@@ -249,11 +250,12 @@ body::before {
     background-color: #4e7252;
     border-radius: 15px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    flex-grow: 1; /* Allows main section to take up available space */
 }
 
-/* Collapsible buttons */
+/* Collapsible button styles */
 .collapsible {
+    background-color: #2b5730;
+    color: white;
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -261,19 +263,24 @@ body::before {
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Active button styles when clicked */
+.collapsible.active {
     background-color: #2b57309a;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+}
+
+/* FAQ Content (hidden by default) */
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #2b5730;
-  }
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
   /* Test */
