@@ -234,19 +234,22 @@ body::before {
 /* Container specifically for FAQ page */
 .faq-container {
     width: 100%;
-    max-width: 1000px;  /* Set a maximum width that fits your design */
+    max-width: 1000px;  /* Set a maximum width that fits your design; */
     margin: 0 auto;  /* Center the container horizontally */
     padding: 20px;  /* Adds space inside the container */
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
     background: hsla(97, 100%, 17%, 1);
     background: radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -moz-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -webkit-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );
+
     opacity: 0.95;
     background-attachment: fixed; /* Ensures a smooth scrolling effect */
     border-radius: 15px;  /* Rounded corners */
     margin-top: 50px;  /* Adds some space from the top */
+    margin-bottom: 50px; /* Adds some space from the bottom */
 }
 
 /* FAQ page header */
@@ -262,7 +265,7 @@ body::before {
     align-items: center;
     text-align: center;
     margin: 90px auto;
-    padding: 17px;
+    padding: 13px;
     max-width: 650px;
     background-color: #4e7252;
     border-radius: 15px;
