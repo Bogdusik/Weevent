@@ -331,6 +331,24 @@ body::before {
 
 /* Container for the events page */
 .events-container {
-    /* Removes the background for the text */
+    background: none;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Removes the box behind the text */
+.eventsmain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+    padding: 20px; /* Add padding for better spacing */
+    max-width: 100%;
+}
+
+/* Changes the background color */
+.events.body {
     
 }
