@@ -336,15 +336,15 @@ body::before {
     margin: 0;
     text-align: left;
     /* Changes background color for this page */
-    background-color: #1c361f;
+    background-color: #0a140b;
 }
 
 /* Removes the box behind the text */
 .eventsmain {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    /* align-items: flex-start;
+    text-align: left; */
     margin: 0;
     padding: 20px; /* Add padding for better spacing */
     max-width: 100%;
