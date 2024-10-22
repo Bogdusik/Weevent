@@ -335,6 +335,8 @@ body::before {
     padding: 20px;
     margin: 0;
     text-align: left;
+    /* Changes background color for this page */
+    background-color: #1c361f;
 }
 
 /* Removes the box behind the text */
@@ -346,9 +348,4 @@ body::before {
     margin: 0;
     padding: 20px; /* Add padding for better spacing */
     max-width: 100%;
-}
-
-/* Changes the background color */
-.events.body {
-    background-color: #1c361f;
 }
