@@ -2,6 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        width: 80%;
+    }
+
+    .explore-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-btn {
+        margin: 5px 0;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .explore-btn {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #dbe7e4, #f7f8fa);
@@ -98,8 +162,7 @@ body {
 }
 
 .menu-icon,
-.search-icon,
-.profile-icon {
+.search-icon {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -111,12 +174,6 @@ body {
     border-radius: 50%;
     width: 35px;
     height: 35px;
-}
-
-.profile-icon {
-    background-color: #4e7252;
-    color: #fff;
-    font-weight: bold;
 }
 
 .explore-btn {
@@ -147,70 +204,6 @@ body {
 
 .footer-content {
     margin: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 28px;
-    }
-
-    .hero-section p {
-        font-size: 16px;
-    }
-
-    .search-bar {
-        width: 80%;
-    }
-
-    .explore-btn {
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-
-    .nav-btn {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .menu {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-btn {
-        margin: 5px 0;
-        font-size: 14px;
-        width: 100%;
-        text-align: left;
-    }
-
-    .search-bar {
-        width: 90%;
-    }
-
-    .hero-section h1 {
-        font-size: 24px;
-    }
-
-    .hero-section p {
-        font-size: 14px;
-    }
-
-    .explore-btn {
-        width: 90%;
-        font-size: 16px;
-    }
 }
 
 /* Background styling */
