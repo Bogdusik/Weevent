@@ -116,9 +116,9 @@ body {
     color: #458352;
 }
 
-/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-                                index.html
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+                                            index.html
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 
 .index_main {
     display: flex;
@@ -261,6 +261,11 @@ body {
     max-width: 1000px;  /* Set a maximum width that fits your design; */
     margin: 0 auto;  /* Center the container horizontally */
     padding: 20px;  /* Adds space inside the container */
+    opacity: 0.95;
+    background-attachment: fixed; /* Ensures a smooth scrolling effect */
+    border-radius: 15px;  /* Rounded corners */
+    margin-top: 50px;  /* Adds some space from the top */
+    margin-bottom: 50px; /* Adds some space from the bottom */
 
     /*box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
     /*background: hsla(97, 100%, 17%, 1);
@@ -269,11 +274,6 @@ body {
     background: -webkit-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );*/
 
-    opacity: 0.95;
-    background-attachment: fixed; /* Ensures a smooth scrolling effect */
-    border-radius: 15px;  /* Rounded corners */
-    margin-top: 50px;  /* Adds some space from the top */
-    margin-bottom: 50px; /* Adds some space from the bottom */
 }
 
 /* FAQ page header */
@@ -354,12 +354,12 @@ body {
 
 /* Container for the events page */
 .events-container {
+    display: flex;
     background: none;
     padding: 20px;
     margin: 0;
     text-align: left;
-    /* Changes background color for this page */
-    background-color: #0a140b;
+    background-color: #0a140b; /* Changes background color for this page */
 }
 
 /* Removes the box behind the text */
