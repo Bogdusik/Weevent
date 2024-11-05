@@ -66,6 +66,8 @@
     }
 }
 
+/*-------------------------------------------------------------------*/
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #dbe7e4, #f7f8fa);
@@ -80,7 +82,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #4e7252;
@@ -88,9 +90,10 @@ body {
 
 .logo {
     font-family: 'Kalnia', sans-serif;
-    color: #4e7252;
+    color: #458352;
     margin: 0;
-    font-size: 2.3rem;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .nav {
@@ -100,7 +103,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #4e7252;
+    color: #458352;
     background-color: #ffffff;
     border: 1px solid #4e7252;
     border-radius: 20px;
@@ -110,7 +113,7 @@ body {
 
 .nav a:hover {
     background-color: #4e7252;
-    color: #ffffff;
+    color: #458352;
 }
 
 .main {
