@@ -78,7 +78,6 @@ body {
     min-height: 100vh;
 }
 
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -117,7 +116,11 @@ body {
     color: #458352;
 }
 
-.main {
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+                                index.html
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+.index_main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,22 +128,19 @@ body {
     margin: 200px auto;
     padding: 20px;
     max-width: 650px;
-    background: rgba(255, 255, 255, 0.2); /* Increased transparency */
-    border-radius: 15px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
 }
 
-.main h3 {
-    color: #4e7252;
+.index_main h3 {
+    color: #FFFFFF;
+    /*458352*/
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.1rem;
 }
 
-.main p {
+.index_main p {
     font-size: 1.1rem;
-    color: #666;
+    color: #FFFFFF;
     font-weight: 600;
 }
 
@@ -181,8 +181,8 @@ body {
 }
 
 .explore-btn {
-    background-color: transparent;
-    border: 2px solid #4e7252;
+    /*background-color: transparent;*/
+    border: 2px solid #0BFF3E;
     color: #4e7252;
     padding: 10px 20px;
     border-radius: 20px;
@@ -198,7 +198,7 @@ body {
 }
 
 .footer {
-    background-color: #4e7252;
+    background-color: #458352;
     padding: 10px;
     color: #FFFFFF;
     text-align: center;
@@ -210,8 +210,36 @@ body {
     margin: 0;
 }
 
-/* Background styling */
-body::before {
+.custom-button {
+    background-color: #458352; /* Adjust to match the green color in your image */
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    /* Positioning on the right side */
+    position: fixed;
+    right: 50px; /* Distance from the right edge of the screen */
+    bottom: 100px; /* Distance from the bottom edge of the screen */
+}
+
+.custom-button .material-icons {
+    color: #FFFFFF; /* White color for the icon */
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.custom-button:hover {
+    background-color: #3a5a42; /* Darker shade for hover effect */
+}
+
+/*Background styling
+.body::before {
     content: '';
     position: absolute;
     top: 0;
@@ -221,8 +249,7 @@ body::before {
     z-index: -1;
     opacity: 0.95;
     background-attachment: fixed;
-}
-
+}*/
 
 /* ################################################################################################################ */
 /*                                              FAQ page styling */
@@ -234,13 +261,13 @@ body::before {
     max-width: 1000px;  /* Set a maximum width that fits your design; */
     margin: 0 auto;  /* Center the container horizontally */
     padding: 20px;  /* Adds space inside the container */
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 
-    background: hsla(97, 100%, 17%, 1);
+    /*box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+    /*background: hsla(97, 100%, 17%, 1);
     background: radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -moz-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -webkit-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );*/
 
     opacity: 0.95;
     background-attachment: fixed; /* Ensures a smooth scrolling effect */
@@ -264,14 +291,14 @@ body::before {
     margin: 90px auto;
     padding: 13px;
     max-width: 650px;
-    background-color: #4e7252;
+    background-color: #458352;
     border-radius: 15px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Collapsible button styles */
 .collapsible {
-    background-color: #4e7252;
+    background-color: #458352;
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -320,7 +347,6 @@ body::before {
     margin-bottom: 10px;
     transition: max-height 0.3s ease-out; /* Smooth transition */
 }
-
 
 /* ################################################################################################################ */
 /*                                              Events page styling */
