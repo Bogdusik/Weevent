@@ -70,13 +70,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #dbe7e4, #f7f8fa);
+    background: conic-gradient(lightgreen, green, darkgreen, darkgreen, green, lightgreen);
     margin: 0;
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* Ensures footer is pushed to the bottom */
+    min-height: 100vh;
 }
+
 
 .header {
     display: flex;
@@ -104,7 +105,7 @@ body {
 .nav a {
     text-decoration: none;
     color: #458352;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border: 1px solid #4e7252;
     border-radius: 20px;
     padding: 5px 15px;
@@ -122,9 +123,9 @@ body {
     align-items: center;
     text-align: center;
     margin: 200px auto;
-    padding: 17px;
+    padding: 20px;
     max-width: 650px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.2); /* Increased transparency */
     border-radius: 15px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
@@ -193,13 +194,13 @@ body {
 
 .explore-btn:hover {
     background-color: #4e7252;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .footer {
     background-color: #4e7252;
     padding: 10px;
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     font-size: 0.9rem;
     margin-top: auto;
