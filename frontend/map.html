@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title> Weevents </title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="title">
-        <h1> Weevents </h1>
-        <hr>
-
-        <a href="index.html"> <img src="images/banner.jpg" alt="Homepage"> </a>
-        <br> <br> 
-    </div>
-
-    <nav>
-        <!-- Navigation -->
-        <div class="sidenav">
-            <a href="events.html"> Events</a>
-            <a href="map.html"> Map</a>
-            <a href="preferences.html"> Preferences</a>
-            <a href="llama.html"> Llama</a>
-            <a href="account.html"> Account</a>
-        </div>
-    </nav>
-
+    <header class="header">
+        <h1 class="logo">Weevents</h1>
+        <nav class="nav">
+            <a href="events.html">Events</a>
+            <a href="map.html">Map</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="faq.html">FAQ</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
 
     <main>
-        <div class="main">
-            <section>
-            <!-- Map goes here -->
-            <h3>Top Trending in Glasgow</h3>
-            <!-- List of events --><br>
-
-            </section>
-        </div>
+        <section class="main">
+            <h3>Discover Events Near You</h3>
+            <p>Find out what's happening in Glasgow right now!</p>
+            <div id="map"></div>
+        </section>
     </main>
-    
-    <div class="footer">
-        <hr>
-        <footer>
-            <br>
-            <!-- <a href="https://www.vecteezy.com/free-photos/account">Account Stock photos by Vecteezy</a> -->
-        </footer>
-    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Weevent - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var map = L.map('map').setView([55.8642, -4.2518], 13); // Centered on Glasgow
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+        });
+    </script>
 </body>
 </html>
