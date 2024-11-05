@@ -70,7 +70,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: conic-gradient(lightgreen, green, darkgreen, darkgreen, green, lightgreen);
+
     margin: 0;
     color: #333;
     display: flex;
@@ -259,21 +259,21 @@ body {
 .faq-container {
     width: 100%;
     max-width: 1000px;  /* Set a maximum width that fits your design; */
-    margin: 0 auto;  /* Center the container horizontally */
+    margin: auto;  /* Center the container horizontally */
     padding: 20px;  /* Adds space inside the container */
     opacity: 0.95;
-    background-attachment: fixed; /* Ensures a smooth scrolling effect */
-    border-radius: 15px;  /* Rounded corners */
+    border-radius: 100px;  /* Rounded corners */
     margin-top: 50px;  /* Adds some space from the top */
     margin-bottom: 50px; /* Adds some space from the bottom */
+    background-attachment: fixed; /* Ensures a smooth scrolling effect */
+    background: radial-gradient(circle, #215600 50%, #d9dace 100%);
 
-    /*box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
-    /*background: hsla(97, 100%, 17%, 1);
+    /*box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth
+    background: hsla(97, 100%, 17%, 1);
     background: radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -moz-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -webkit-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );*/
-
 }
 
 /* FAQ page header */
