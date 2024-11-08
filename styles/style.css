@@ -66,21 +66,23 @@
     }
 }
 
+/*-------------------------------------------------------------------*/
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #dbe7e4, #f7f8fa);
+
     margin: 0;
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* Ensures footer is pushed to the bottom */
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #4e7252;
@@ -88,9 +90,10 @@ body {
 
 .logo {
     font-family: 'Kalnia', sans-serif;
-    color: #4e7252;
+    color: #458352;
     margin: 0;
-    font-size: 2.3rem;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .nav {
@@ -100,8 +103,8 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #4e7252;
-    background-color: #ffffff;
+    color: #458352;
+    background-color: #FFFFFF;
     border: 1px solid #4e7252;
     border-radius: 20px;
     padding: 5px 15px;
@@ -110,33 +113,34 @@ body {
 
 .nav a:hover {
     background-color: #4e7252;
-    color: #ffffff;
+    color: #458352;
 }
 
-.main {
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+                                            index.html
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+.index_main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 200px auto;
-    padding: 17px;
+    padding: 20px;
     max-width: 650px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
 }
 
-.main h3 {
-    color: #4e7252;
+.index_main h3 {
+    color: #FFFFFF;
+    /*458352*/
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.1rem;
 }
 
-.main p {
+.index_main p {
     font-size: 1.1rem;
-    color: #666;
+    color: #FFFFFF;
     font-weight: 600;
 }
 
@@ -177,8 +181,8 @@ body {
 }
 
 .explore-btn {
-    background-color: transparent;
-    border: 2px solid #4e7252;
+    /*background-color: transparent;*/
+    border: 2px solid #0BFF3E;
     color: #4e7252;
     padding: 10px 20px;
     border-radius: 20px;
@@ -190,13 +194,13 @@ body {
 
 .explore-btn:hover {
     background-color: #4e7252;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .footer {
-    background-color: #4e7252;
+    background-color: #458352;
     padding: 10px;
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     font-size: 0.9rem;
     margin-top: auto;
@@ -206,8 +210,36 @@ body {
     margin: 0;
 }
 
-/* Background styling */
-body::before {
+.custom-button {
+    background-color: #458352; /* Adjust to match the green color in your image */
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    /* Positioning on the right side */
+    position: fixed;
+    right: 50px; /* Distance from the right edge of the screen */
+    bottom: 100px; /* Distance from the bottom edge of the screen */
+}
+
+.custom-button .material-icons {
+    color: #FFFFFF; /* White color for the icon */
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.custom-button:hover {
+    background-color: #3a5a42; /* Darker shade for hover effect */
+}
+
+/*Background styling
+.body::before {
     content: '';
     position: absolute;
     top: 0;
@@ -217,8 +249,7 @@ body::before {
     z-index: -1;
     opacity: 0.95;
     background-attachment: fixed;
-}
-
+}*/
 
 /* ################################################################################################################ */
 /*                                              FAQ page styling */
@@ -228,21 +259,21 @@ body::before {
 .faq-container {
     width: 100%;
     max-width: 1000px;  /* Set a maximum width that fits your design; */
-    margin: 0 auto;  /* Center the container horizontally */
+    margin: auto;  /* Center the container horizontally */
     padding: 20px;  /* Adds space inside the container */
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    opacity: 0.95;
+    border-radius: 100px;  /* Rounded corners */
+    margin-top: 50px;  /* Adds some space from the top */
+    margin-bottom: 50px; /* Adds some space from the bottom */
+    background-attachment: fixed; /* Ensures a smooth scrolling effect */
+    background: radial-gradient(circle, #215600 50%, #d9dace 100%);
 
+    /*box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth
     background: hsla(97, 100%, 17%, 1);
     background: radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -moz-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
     background: -webkit-radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );
-
-    opacity: 0.95;
-    background-attachment: fixed; /* Ensures a smooth scrolling effect */
-    border-radius: 15px;  /* Rounded corners */
-    margin-top: 50px;  /* Adds some space from the top */
-    margin-bottom: 50px; /* Adds some space from the bottom */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );*/
 }
 
 /* FAQ page header */
@@ -260,14 +291,14 @@ body::before {
     margin: 90px auto;
     padding: 13px;
     max-width: 650px;
-    background-color: #4e7252;
+    background-color: #458352;
     border-radius: 15px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Collapsible button styles */
 .collapsible {
-    background-color: #4e7252;
+    background-color: #458352;
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -317,19 +348,18 @@ body::before {
     transition: max-height 0.3s ease-out; /* Smooth transition */
 }
 
-
 /* ################################################################################################################ */
 /*                                              Events page styling */
 /* ################################################################################################################ */
 
 /* Container for the events page */
 .events-container {
+    display: flex;
     background: none;
     padding: 20px;
     margin: 0;
     text-align: left;
-    /* Changes background color for this page */
-    background-color: #0a140b;
+    background-color: #0a140b; /* Changes background color for this page */
 }
 
 /* Removes the box behind the text */

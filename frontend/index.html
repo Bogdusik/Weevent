@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <title> Weevents </title> 
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body{
+            background: conic-gradient(lightgreen, green, darkgreen, darkgreen, green, lightgreen);
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="logo">Weevents</h1>
-        <nav class="nav">
-            <a href="events.html">Events</a>
-            <a href="map.html">Map</a>
-            <a href="favourites.html">Favourites</a>
-            <a href="faq.html">FAQ</a>
-            <a href="account.html">Account</a>
-        </nav>
-    </header>
+        <header class="header">
+            <h1 class="logo">Weevents</h1>
+            <nav class="nav">
+                <a href="events.html">Events</a>
+                <a href="map.html">Map</a>
+                <a href="favourites.html">Favourites</a>
+                <a href="faq.html">FAQ</a>
+                <a href="account.html">Account</a>
+            </nav>
+        </header>
 
+        <main>
+            <section class="index_main">
+                <h3>Discover Events Near You</h3>
+                <p>Find out what's happening in Glasgow right now!</p>
+                <div class="search-bar input">
+                    <button class="menu-icon">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <input type="text" placeholder="Hinted search text">
+                    <button class="search-icon">
+                        <span class="material-icons">search</span>
+                    </button>
+                </div>
+                <button class="explore-btn">Explore Events</button>
+            </section>
+        </main>
 
-    <main>
-        <section class="main">
-            <h3>Discover Events Near You</h3>
-            <p>Find out what's happening in Glasgow right now!</p>
-            <div class="search-bar">
-                <button class="menu-icon">
-                    <span class="material-icons">menu</span>
-                </button>
-                <input type="text" placeholder="Hinted search text">
-                <button class="search-icon">
-                    <span class="material-icons">search</span>
-                </button>
+        <button class="custom-button">
+            <span class="material-icons">chat</span>
+        </button>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2024 Weevent - All Rights Reserved.</p>
             </div>
-            <button class="explore-btn">Explore Events</button>
-        </section>
-    </main>
+        </footer>
 
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>© 2024 Weevent - All Rights Reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
