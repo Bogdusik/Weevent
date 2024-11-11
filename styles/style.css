@@ -356,7 +356,7 @@ body {
 .events-container {
     display: flex;
     background: none;
-    padding: 20px;
+    padding: 80px;
     margin: 0;
     text-align: left;
     background-color: #0a140b; /* Changes background color for this page */
@@ -369,6 +369,24 @@ body {
     /* align-items: flex-start;
     text-align: left; */
     margin: 0;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px;
     max-width: 100%;
+}
+
+/* Event Page Button */
+.contact-btn {
+    /*background-color: transparent;*/
+    border: 2px solid #0BFF3E;
+    color: #4e7252;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+.contact-btn:hover {
+    background-color: #4e7252;
+    color: #FFFFFF;
 }
