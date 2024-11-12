@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Weevents - Events</title>
+    <title> Weevents </title>
     <link rel="stylesheet" href="../styles/style.css">
     <style>
         body{
@@ -33,23 +33,100 @@
                     Your gateway to local experiences
                 </h2>
 
-            <img src="../images/4.jpg" alt="Events" style="float: right; width: 300px; border-radius: 23px; margin-left: 150px; margin-top: -110px">
+                <img src="../images/4.jpg" alt="Events" style="float: right; width: 300px; border-radius: 23px; margin-left: 150px; margin-top: -110px">
 
-            <p style="color:rgb(81, 153, 97)"> Weevents connects you to the vibrant event scene in Glasgow.<br>
-                With our interactive map, you can easily navigate through various happenings, from concerts to festivals.
-                Our AI-powered recommendations <br>personalize your experience, ensuring you never miss out on the events that matter most to you.
-                Dive into a world of excitement and make <br>the most of every moment with Weevents.
-            </p><br>
-                <button class="contact-btn">Get in touch</button>
-            <!-- Event buttons here -->
-
+                <p style="color:rgb(81, 153, 97)"> Weevents connects you to the vibrant event scene in Glasgow.<br>
+                    With our interactive map, you can easily navigate through various happenings, from concerts to festivals.
+                    Our AI-powered recommendations <br>personalize your experience, ensuring you never miss out on the events that matter most to you.
+                    Dive into a world of excitement and make <br>the most of every moment with Weevents.
+                </p><br>
+                <button class="contact-btn" onclick="openContactForm()">Get in touch</button>
             </section>
             <div class="explore-events" style="text-align: center;">
                 <p style="color:rgb(81, 153, 97); margin-top: 50px">Explore what we offer</p>
             </div>
-
         </div>
     </main>
+
+    <script>
+        function openContactForm() {
+            const popup = window.open("", "ContactForm", "width=1200,height=800");
+            popup.document.write(`
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Get in Touch</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 0;
+                            padding: 20px;
+                            background: linear-gradient(90deg, #B0E391 25%, #797979 73%);
+                        }
+                        .container {
+                            max-width: 800px;
+                            margin: auto;
+                        }
+                        h3 {
+                            color: rgb(81, 153, 97);
+                            font-weight: bold;
+                        }
+                        .contact-form {
+                            background-color: #f0f0f0;
+                            padding: 45px;
+                            border-radius: 20px;
+                            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                        }
+                        input, textarea, button {
+                            width: 100%;
+                            padding: 10px;
+                            margin-top: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                        }
+                        button {
+                            background-color: #4CAF50;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+                        button:hover {
+                            background-color: #4e7252;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <form class="contact-form">
+                            <h3>Get in Touch</h3>
+                            <p>We're here to help</p>
+
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" placeholder="Jane Smith">
+
+                            <label for="email">Email address*</label>
+                            <input type="email" id="email" placeholder="email@website.com">
+
+                            <label for="phone">Phone number*</label>
+                            <input type="tel" id="phone" placeholder="+447833000000">
+
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Write your message here"></textarea>
+
+                            <input type="checkbox" id="consent">
+                            <label for="consent">I allow this website to store my submission so they can respond to my inquiry</label>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </body>
+                </html>
+            `);
+        }
+    </script>
 
     <button class="custom-button">
         <span class="material-icons">chat</span>
