@@ -1,4 +1,4 @@
-/* General styles */
+/* general styles */
 @import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
@@ -12,9 +12,9 @@
         font-size: 16px;
     }
 
-    .search-bar {
+    /*.search-bar {
         width: 80%;
-    }
+    }*/
 
     .explore-btn {
         font-size: 16px;
@@ -66,7 +66,9 @@
     }
 }
 
-/*-------------------------------------------------------------------*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+                                             body structure
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -119,7 +121,6 @@ body {
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
                                             index.html
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
-
 .index_main {
     display: flex;
     flex-direction: column;
@@ -132,7 +133,6 @@ body {
 
 .index_main h3 {
     color: #FFFFFF;
-    /*458352*/
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.1rem;
@@ -181,7 +181,6 @@ body {
 }
 
 .explore-btn {
-    /*background-color: transparent;*/
     border: 2px solid #0BFF3E;
     color: #4e7252;
     padding: 10px 20px;
@@ -211,10 +210,10 @@ body {
 }
 
 .custom-button {
-    background-color: #458352; /* Adjust to match the green color in your image */
+    background-color: #458352;
     border: none;
     border-radius: 50%;
-    width: 60px; /* Adjust size as needed */
+    width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -222,52 +221,34 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.3s;
-
-    /* Positioning on the right side */
     position: fixed;
-    right: 50px; /* Distance from the right edge of the screen */
-    bottom: 100px; /* Distance from the bottom edge of the screen */
+    right: 50px;
+    bottom: 100px;
 }
 
 .custom-button .material-icons {
-    color: #FFFFFF; /* White color for the icon */
-    font-size: 24px; /* Adjust icon size as needed */
+    color: #FFFFFF;
+    font-size: 24px;
 }
 
 .custom-button:hover {
-    background-color: #3a5a42; /* Darker shade for hover effect */
+    background-color: #3a5a42;
 }
-
-/*Background styling
-.body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.95;
-    background-attachment: fixed;
-}*/
 
 /* ################################################################################################################ */
 /*                                              FAQ page styling */
 /* ################################################################################################################ */
-
-/* Container specifically for FAQ page */
 .faq-container {
     width: 100%;
-    max-width: 1000px;  /* Set a maximum width that fits your design; */
-    margin: auto;  /* Center the container horizontally */
-    padding: 20px;  /* Adds space inside the container */
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
     opacity: 0.95;
-    border-radius: 100px;  /* Rounded corners */
-    margin-top: 50px;  /* Adds some space from the top */
-    margin-bottom: 50px; /* Adds some space from the bottom */
-    background-attachment: fixed; /* Ensures a smooth scrolling effect */
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
     background: radial-gradient(circle, #215600 50%, #d9dace 100%);
-
     /*box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth
     background: hsla(97, 100%, 17%, 1);
     background: radial-gradient(circle, hsla(97, 100%, 17%, 1) 30%, hsla(65, 14%, 83%, 1) 100%);
@@ -276,13 +257,11 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#215600", endColorstr="#d9dace", GradientType=1 );*/
 }
 
-/* FAQ page header */
 .faqmain {
     margin: 50px auto;
     text-align: center;
 }
 
-/* FAQ container */
 .questions {
     display: flex;
     flex-direction: column;
@@ -296,7 +275,6 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Collapsible button styles */
 .collapsible {
     background-color: #458352;
     color: white;
@@ -309,19 +287,17 @@ body {
     font-size: 15px;
     margin: 5px 0;
     border-radius: 5px;
-    position: relative; /* To position arrow */
+    position: relative;
 }
 
 .collapsible:hover {
     background-color: #2b57307a;
 }
 
-/* Active button styles when clicked */
 .collapsible.active {
     background-color: #2b5730;
 }
 
-/* Arrow icon */
 .arrow {
     position: absolute;
     right: 15px;
@@ -331,51 +307,39 @@ body {
     color: white;
 }
 
-/* Transition for rotating arrow */
 .collapsible.active .arrow {
     transform: rotate(180deg);
 }
 
-/* Collapsible content styles */
 .content {
     padding: 0 18px;
-    max-height: 0; /* Initially collapsed */
+    max-height: 0;
     overflow: hidden;
     background-color: #2b5730;
     color: white;
     border-radius: 5px;
     margin-bottom: 10px;
-    transition: max-height 0.3s ease-out; /* Smooth transition */
+    transition: max-height 0.3s ease-out;
 }
 
 /* ################################################################################################################ */
 /*                                              Events page styling */
 /* ################################################################################################################ */
-
-/* Container for the events page */
 .events-container {
     display: flex;
-    /* background: none; */
-    padding: 80px;
+    padding: 30px;
     margin: 0 auto;
-    /* text-align: left; */
-    /* background-color: #0a140b; Changes background color for this page */
 }
 
-/* Removes the box behind the text */
 .eventsmain {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start;
-    text-align: left; */
     margin: 0;
     padding: 20px;
     max-width: 100%;
 }
 
-/* Event Page Button */
 .contact-btn {
-    /*background-color: transparent;*/
     border: 2px solid #0BFF3E;
     color: #4e7252;
     padding: 10px 20px;
@@ -384,6 +348,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-weight: 600;
+    margin-left: 200px;
 }
 
 .contact-btn:hover {
@@ -393,8 +358,11 @@ body {
 
 
 /* ################################################################################################################ */
-/*                                              Events page styling */
+/*                                              Map page styling */
 /* ################################################################################################################ */
+.map_api{
+
+}
 
 .map_main {
     display: flex;
@@ -403,12 +371,14 @@ body {
     text-align: center;
     margin: 0px auto;
     padding: 10px;
+    width: 40%
+
 }
 
 .button-container {
     display: flex;
-    gap: 10px; /* Adjust space between buttons */
-    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -426,22 +396,6 @@ body {
 .mapEvent-btn:hover, .mapPreferences-btn:hover {
     background-color: #4e7252;
     color: #FFFFFF;
-}
-
-
-/* ################################################################################################################ */
-/*                                              Map page styling */
-/* ################################################################################################################ */
-
-
-.map_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 200px auto;
-    padding: 20px;
-    max-width: 650px;
 }
 
 .map_main h3 {
@@ -469,7 +423,7 @@ body {
     width: 80%;
 }
 
-.search-bar input {
+.search-bar map input {
     border: none;
     background: transparent;
     outline: none;
@@ -479,7 +433,24 @@ body {
     color: #555;
 }
 
+.menu-icon map,
+.search-icon map {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
 
+/* ################################################################################################################ */
+/*                                              Favourites page styling */
+/* ################################################################################################################ */
 
 
 
