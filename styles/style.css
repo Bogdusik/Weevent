@@ -390,3 +390,50 @@ body {
     background-color: #4e7252;
     color: #FFFFFF;
 }
+
+
+/* ################################################################################################################ */
+/*                                              Events page styling */
+/* ################################################################################################################ */
+
+.map_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+}
+
+.mapEvent-btn, .mapPreferences-btn {
+    border: 2px solid #0BFF3E;
+    color: #4e7252;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+.mapEvent-btn:hover, .mapPreferences-btn:hover {
+    background-color: #4e7252;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
