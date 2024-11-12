@@ -355,11 +355,11 @@ body {
 /* Container for the events page */
 .events-container {
     display: flex;
-    background: none;
+    /* background: none; */
     padding: 80px;
-    margin: 0;
-    text-align: left;
-    background-color: #0a140b; /* Changes background color for this page */
+    margin: 0 auto;
+    /* text-align: left; */
+    /* background-color: #0a140b; Changes background color for this page */
 }
 
 /* Removes the box behind the text */
