@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Weevents - FAQ</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <style>
         body{
             background: #D9DACE;
@@ -14,13 +15,13 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="logo"><a href="index.html" id="header-link" style="text-decoration: none; color: inherit;">Weevents</a></h1>
+            <h1 class="logo"><a href="{% url 'index' %}" id="header-link" style="text-decoration: none; color: inherit;">Weevents</a></h1>
             <nav class="nav">
-                <a href="events.html">Events</a>
-                <a href="map.html">Map</a>
-                <a href="favourites.html">Favourites</a>
-                <a href="faq.html">FAQ</a>
-                <a href="account.html">Account</a>
+                <a href="{% url 'events' %}">Events</a>
+                <a href="{% url 'map' %}">Map</a>
+                <a href="{% url 'favourites' %}">Favourites</a>
+                <a href="{% url 'faq' %}">FAQ</a>
+                <a href="{% url 'account' %}">Account</a>
             </nav>
         </header>
 
@@ -113,8 +114,8 @@
             </div>
         </footer>
 </div>
-
-<script src="../scripts/faq.js"></script>
+{% load static %}
+<script src="{% static 'faq.js' %}"></script>
 
 </body>
 </html>
