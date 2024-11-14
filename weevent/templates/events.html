@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title> Weevents </title>
-    <link rel="stylesheet" href="../styles/style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <style>
         body{
             background: radial-gradient(circle at bottom, #215600, #4e7252, #809482, #D9DACE, #ffffff);
@@ -13,13 +14,13 @@
 
 <body>
     <header class="header">
-        <h1 class="logo"><a href="index.html" id="header-link" style="text-decoration: none; color: inherit;">Weevents</a></h1>
+        <h1 class="logo"><a href="{% url 'index' %}" id="header-link" style="text-decoration: none; color: inherit;">Weevents</a></h1>
         <nav class="nav">
-            <a href="events.html">Events</a>
-            <a href="map.html">Map</a>
-            <a href="favourites.html">Favourites</a>
-            <a href="faq.html">FAQ</a>
-            <a href="account.html">Account</a>
+            <a href="{% url 'events' %}">Events</a>
+            <a href="{% url 'map' %}">Map</a>
+            <a href="{% url 'favourites' %}">Favourites</a>
+            <a href="{% url 'faq' %}">FAQ</a>
+            <a href="{% url 'account' %}">Account</a>
         </nav>
     </header>
 
@@ -33,7 +34,8 @@
                     Your gateway to local experiences
                 </h2>
 
-                <img src="../images/4.jpg" alt="Events" style="float: right; width: 300px; border-radius: 23px; margin-left: 150px; margin-top: -110px">
+                {% load static %}
+                <img src="{% static '4.jpg' %}" alt="Events" style="float: right; width: 300px; border-radius: 23px; margin-left: 150px; margin-top: -110px">
 
                 <p style="color:rgb(81, 153, 97)"> Weevents connects you to the vibrant event scene in Glasgow.<br>
                     With our interactive map, you can easily navigate through various happenings, from concerts to festivals.
@@ -138,7 +140,8 @@
                         <button type="submit">Submit</button>
                     </div>
                     <div class="image-container">
-                        <img src="../images/5.jpg" alt="Contact Image">
+                        {% load static %}
+                        <img src="{% static '5.jpg' %}" alt="Contact image">
                     </div>
                 </div>
             </div>
