@@ -325,10 +325,23 @@ body {
 /* ################################################################################################################ */
 /*                                              Events page styling */
 /* ################################################################################################################ */
+.header-events{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #4e7252;
+    margin-bottom: 70px;
+}
+
 .events-container {
     display: flex;
-    padding: 30px;
     margin: 0 auto;
+    border: 3px solid #458352;
+    border-radius: 20px;
+    background-color: #B4B4B4;
 }
 
 .eventsmain {
@@ -493,5 +506,4 @@ body {
     margin-top: 15px;
     font-weight: bold;
     font-style: italic;
-
 }
