@@ -1,0 +1,232 @@
+/* General font imports */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap'); /* Ensure K2D ExtraBold 800 is imported */
+
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and global font styles */
+body {
+    font-family: 'K2D', sans-serif; /* Apply K2D font to the entire page */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    font-weight: 800; /* Set global font weight to ExtraBold 800 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.header.dark-mode {
+    background-color: #333;
+}
+
+.nav.dark-mode a {
+    color: #e0e0e0;
+}
+
+.nav.dark-mode a:hover {
+    background-color: #4e7252;
+    color: #ffffff;
+}
+
+.index_main.dark-mode {
+    background-color: #181818;
+}
+
+.search-bar.dark-mode {
+    background-color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar input.dark-mode {
+    color: #e0e0e0;
+    background: transparent;
+}
+
+.explore-btn.dark-mode {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+.explore-btn.dark-mode:hover {
+    background-color: #4e7252;
+    color: #FFFFFF;
+}
+
+.footer.dark-mode {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.footer-content.dark-mode {
+    color: #e0e0e0;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    position: fixed; /* Fix it to the top right */
+    top: 0;
+    right: 0;
+    background-color: transparent; /* Make the header fully transparent */
+    padding: 15px;
+    z-index: 10; /* Ensure it stays on top of content */
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4e7252;
+    font-weight: 800; /* Apply ExtraBold 800 to links */
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #4e7252;
+    color: #ffffff;
+}
+
+/* Animated Text */
+.animated-text {
+    font-size: 100px;
+    font-weight: 800; /* Apply ExtraBold 800 */
+    text-align: center;
+    background-image: linear-gradient(45deg, #458352, #6abf69, #a8d08d, #76d7c4); /* Green shades */
+    background-size: 400% 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Main Section */
+.index_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 200px auto;
+    padding: 20px;
+    max-width: 650px;
+    font-weight: 800; /* Apply ExtraBold 800 */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background: #e8e3eb;
+    padding: 5px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    flex: 1;
+    color: #000000;
+    font-weight: 800; /* Apply ExtraBold 800 */
+}
+
+/* Search and menu icons */
+.menu-icon,
+.search-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+/* Explore button */
+.explore-btn {
+    border: 2px solid #ffffff;
+    color: #4e7252;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 800; /* Apply ExtraBold 800 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.explore-btn:hover {
+    background-color: #4e7252;
+    color: #FFFFFF;
+}
+
+/* Arrow Icon */
+.explore-btn .material-icons {
+    font-size: 26px;
+    transition: transform 0.3s ease; /* Transition for smooth movement */
+}
+
+/* Move the arrow when hovered */
+.explore-btn:hover .material-icons {
+    transform: translateX(10px); /* Move the arrow to the right on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: transparent;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    margin: 0;
+}
+
+.dark-mode-toggle:hover {
+    color: #ffffff;
+}
