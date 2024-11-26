@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weevents</title> 
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="events.html">Events</a>
+            <a href="map.html">Map</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="faq.html">FAQ</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="index_main">
+            <h1 class="animated-text">weevents</h1>
+            <div class="search-bar input">
+                <input type="text" placeholder="Enter your address">
+                <icon class="search-icon">
+                    <span class="material-icons">search</span>
+                </icon>
+            </div>
+            <a href="map.html" class="explore-btn">
+                <span class="material-icons">arrow_forward</span>
+            </a>
+        </section>
+    </main>
+
+<script>
+    // Check if the user has a saved preference for dark mode
+    const storedMode = localStorage.getItem('darkMode');
+    if (storedMode === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Function to toggle dark mode on and off
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        // Save the user's preference
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    }
+
+    // Add event listener to the toggle button
+    const darkModeButton = document.querySelector('.dark-mode-toggle');
+    darkModeButton.addEventListener('click', toggleDarkMode);
+</script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 weevents - All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

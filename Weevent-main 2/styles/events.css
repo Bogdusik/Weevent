@@ -1,0 +1,213 @@
+/* General font imports */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap'); /* Ensure K2D ExtraBold 800 is imported */
+
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and global font styles */
+body {
+    font-family: 'K2D', sans-serif; /* Apply K2D font to the entire page */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff; /* From HTML */
+    font-weight: 800; /* Set global font weight to ExtraBold 800 */
+}
+
+/* Header styles */
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    position: sticky; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width header */
+    background-color: white; /* Transparent background */
+    padding: 15px 20px; /* Padding for breathing space */
+    z-index: 10; /* Stay on top of content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */
+
+}
+
+/* Logo styles with animated gradient */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #458352, #6abf69, #a8d08d, #76d7c4); /* Green gradient */
+    background-size: 400% 400%; /* Ensures smooth animation */
+    color: transparent;
+    -webkit-background-clip: text; /* Clip text to show the gradient */
+    animation: gradientAnimation 5s ease infinite; /* Apply animation */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4e7252;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #4e7252; /* Dark green background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Main Section */
+main {
+    padding: 100px 20px 20px; /* Top padding accounts for fixed header */
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mapEvent-btn,
+.mapPreferences-btn {
+    font-weight: 800;
+    background-color: #0066ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Footer styles */
+.footer {
+    background-color: transparent;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    margin: 0;
+    font-weight: 800;
+}
+
+/* Additional HTML styles */
+.content {
+    padding: 20px; /* From HTML */
+}
+
+
+
+body {
+  color: #4e7252;
+  background: #fcfcfc;
+  font-family: 'K2D', sans-serif;
+  overflow-x: hidden;
+}
+
+.faq-header{
+  font-size: 42px;
+  width: 800px;
+  border-bottom: 1px dotted #ccc;
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.faq-question {
+  padding: 20px 0;
+  width: 800px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title> Map </title> 
+    <link rel="stylesheet" href="../styles/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"> <a href="index-new.html" id="header-link" style="text-decoration: none; color: inherit;">Weevents</a></h1>
+        <nav class="nav">
+            <a href="events.html">Events</a>
+            <a href="map.html">Map</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="faq.html">FAQ</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="map_api">
+            <div id="map"></div>
+            <div class="button-container">
+            </div>
+        </section>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Weevent - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var map = L.map('map').setView([55.8642, -4.2518], 13); // Centered on Glasgow
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+        });
+    </script>
+</body>
+</html>
