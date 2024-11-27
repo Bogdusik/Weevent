@@ -49,6 +49,17 @@
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
+            var marker = L.marker([55.8775633,-4.2923346]).addTo(map);
+            marker.bindPopup("<b>The Tenementals Album Launch</b><br>27/11/24</br><b>Oran Mor</b>").openPopup();
+            var marker2 = L.marker([55.8586938,-4.2619798]).addTo(map);
+            marker2.bindPopup("<b>DevFest</b><br>27/11/24</br><b>JPMorgan Chase & Co</b>").openPopup();
+            var marker3 = L.marker([55.8546641,-4.2372673]).addTo(map);
+            marker3.bindPopup("<b>Scottish Alt Music Awards</b><br>30/11/24</br><b>St Luke's & the Winged Ox</b>").openPopup();
+            var marker4 = L.marker([55.8573798,-4.266095]).addTo(map);
+            marker4.bindPopup("<b>Sustainabuild Breakfast Club</b><br>28/11/24</br><b>The Social Hub Glasgow</b>").openPopup();
+            var marker5 = L.marker([55.8645599,-4.3022813]).addTo(map);
+            marker5.bindPopup("<b>Swiftogeddon</b><br>06/12/24</br><b>SWG3 Studio Warehouse</b>").openPopup();
+            
         });
     </script>
 </body>
