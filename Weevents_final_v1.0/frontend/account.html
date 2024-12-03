@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Weevents - Login</title>
+    <link rel="stylesheet" href="../styles/events.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <a href="index-new.html" id="header-link" style="text-decoration: none; color: inherit;">Weevents</a>
+        </h1>
+        <nav class="nav">
+            <a href="events.html">Events</a>
+            <a href="map.html">Map</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="faq.html">FAQ</a>
+            <a href="account.html">Account</a>
+            <a href="contactus.html">Support</a>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+            <h2 class="form-title">Welcome Back</h2>
+            <p class="form-subtitle">Log in to access your account</p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary login-btn">Log In</button>
+                <p class="form-footer">Don't have an account? <a href="#" class="signup-link" onclick="toggleForms()">Sign up here</a></p>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container" id="register-form" style="display: none;">
+            <h2 class="form-title">Create an Account</h2>
+            <p class="form-subtitle">Sign up to get started</p>
+            <form>
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email Address</label>
+                    <input type="email" id="register-email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" class="form-control" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn btn-primary register-btn">Sign Up</button>
+                <p class="form-footer">Already have an account? <a href="#" class="login-link" onclick="toggleForms()">Log in here</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Weevent - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle between login and register forms
+        function toggleForms() {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
+<style>
+/* General font imports */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap');
+
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and global font styles */
+body {
+    font-family: 'K2D', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fcfcfc;
+    font-weight: 800;
+}
+
+/* Header styles */
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4e7252;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #4e7252;
+    color: #ffffff;
+}
+
+/* Main login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+/* Form container styles */
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #4e7252;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3e5b41;
+}
+
+.form-footer {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-link,
+.login-link {
+    color: #4e7252;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover,
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    background-color: transparent;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    margin: 0;
+    font-weight: 800;
+}
+</style>
