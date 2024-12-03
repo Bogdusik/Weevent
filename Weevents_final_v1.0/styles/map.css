@@ -1,0 +1,162 @@
+/* General font imports */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap'); /* Ensure K2D ExtraBold 800 is imported */
+
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and global font styles */
+body {
+    font-family: 'K2D', sans-serif; /* Apply K2D font to the entire page */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    font-weight: 800; /* Set global font weight to ExtraBold 800 */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width header */
+    background-color: transparent; /* Transparent background */
+    padding: 15px 20px; /* Padding for breathing space */
+    z-index: 10; /* Stay on top of content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */
+
+}
+
+/* Logo styles with animated gradient */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #458352, #6abf69, #a8d08d, #76d7c4); /* Green gradient */
+    background-size: 400% 400%; /* Ensures smooth animation */
+    color: transparent;
+    -webkit-background-clip: text; /* Clip text to show the gradient */
+    animation: gradientAnimation 5s ease infinite; /* Apply animation */
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navigation styles */
+.nav {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4e7252;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #4e7252; /* Dark green background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Main Section */
+main {
+    padding: 100px 20px 20px; /* Top padding accounts for fixed header */
+}
+
+/* Map Section */
+#map {
+    border: 0px solid #282c34;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow around the map */
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mapEvent-btn,
+.mapPreferences-btn {
+    font-weight: 800;
+    background-color: #0066ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.mapEvent-btn:hover,
+.mapPreferences-btn:hover {
+    background-color: #004bb5;
+    transform: translateY(-2px);
+}
+
+.mapEvent-btn:active,
+.mapPreferences-btn:active {
+    transform: translateY(0);
+}
+
+.search-bar.map input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+}
+
+.menu-icon.map,
+.search-icon.map {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Footer styles */
+.footer {
+    background-color: transparent;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-content {
+    margin: 0;
+    font-weight: 800;
+}
