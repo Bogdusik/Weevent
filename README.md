@@ -81,4 +81,4 @@ Weevent/
 - **Database Design**: Structured MySQL database schema for events, users, and interactions
 - **AI Integration Planning**: Designed architecture for AI-powered event recommendations and conversational assistance
 
-Fork it, use it, improve it — open to PRs!
+Fork it, use it, improve it - open to PRs!
