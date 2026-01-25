@@ -1,29 +1,84 @@
 # Weevent
 
-Weevent is a dynamic platform designed to revolutionize how users discover local events and points of interest. It provides an intuitive interface that seamlessly connects communities, making it easier than ever to explore what's happening nearby.
+A dynamic platform that transforms how users discover local events and points of interest. Features an interactive map interface, event interaction tools, and AI-powered recommendations. Designed to connect communities and make exploring nearby happenings effortless.
 
-## Key Features
-- **Interactive Map**: Discover events on a dynamic map with detailed information and navigation options.
-- **Event Interaction**: Follow, like, and share events to enhance engagement.
-- **Event Advertising**: Allows organizers to promote their events to a wider audience.
-- **AI Assistant**: Powered by Llama 3.2, offering personalized event recommendations and conversational assistance (coming soon).
-- **Cross-Platform Compatibility**: Accessible via both desktop and mobile with responsive design.
-- **Favorites**: Save events for future reference with easy-to-use favorite buttons.
+## Demo
 
-## Technology Stack
-- **Frontend**: HTML5, JavaScript
-- **Backend**: MySQL, various APIs (framework under selection)
-- **Planned Features**: Enhanced AI capabilities for better recommendations and engagement.
+![Interactive Map](screenshots/map.png)
+![Event Discovery](screenshots/events.png)
+![Event Details](screenshots/event-details.png)
 
-## Mission
-By bridging technology and community, Weevent simplifies event discovery and fosters local connections, redefining how users interact with their surroundings.
+## Why It's Cool
 
-## Contribution
-We welcome contributions! For more information, check out our [guidelines](#contribution-guidelines).
+- **Interactive Map Interface**: Discover events on a dynamic map with detailed information, navigation options, and location-based filtering
+- **Event Engagement**: Follow, like, and share events to enhance community engagement and event discovery
+- **Event Advertising**: Platform for organizers to promote events to a wider audience
+- **AI-Powered Recommendations**: Personalized event suggestions powered by Llama 3.2 AI assistant (coming soon)
+- **Cross-Platform**: Responsive design accessible on both desktop and mobile devices
+- **Favorites System**: Save events for future reference with easy-to-use favorite functionality
 
-## License
-[MIT License](LICENSE)
+## Tech Stack
 
----
+- **Frontend**: HTML5, JavaScript, CSS
+- **Backend**: MySQL, Python (framework under selection)
+- **AI**: Llama 3.2 (planned)
+- **APIs**: Various location and event APIs
 
-Stay updated and explore the beta version (URL coming soon).
+## How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Bogdusik/Weevent.git
+   cd Weevent
+   ```
+
+2. **Set up backend:**
+   ```bash
+   cd backend/weevents_backend
+   # Follow backend setup instructions
+   ```
+
+3. **Set up frontend:**
+   ```bash
+   cd frontend
+   # Open index.html or use a local server
+   python -m http.server 8000
+   ```
+
+4. **Configure database:**
+   - Set up MySQL database
+   - Configure connection in backend settings
+
+> **Note**: Backend framework is under selection. Check project structure for current implementation.
+
+## Project Structure
+
+```
+Weevent/
+├── frontend/                   # Frontend Application
+│   ├── [HTML/CSS/JS files]    # Frontend code
+│   └── styles/                 # CSS styles
+│
+├── backend/                    # Backend Application
+│   └── weevents_backend/       # Backend code
+│
+├── scripts/                    # Utility Scripts
+│   └── [script files]
+│
+├── images/                     # Static Assets
+│   └── [image files]
+│
+└── [config files]             # Configuration files
+    └── README.md
+```
+
+## What I Learned
+
+- **Interactive Maps**: Integrated map functionality for location-based event discovery and visualization
+- **Event Management Systems**: Designed data models and workflows for event creation, discovery, and interaction
+- **Community Features**: Implemented social features like following, liking, and sharing events
+- **Responsive Design**: Built cross-platform interface optimized for both desktop and mobile experiences
+- **Database Design**: Structured MySQL database schema for events, users, and interactions
+- **AI Integration Planning**: Designed architecture for AI-powered event recommendations and conversational assistance
+
+Fork it, use it, improve it — open to PRs!
