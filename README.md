@@ -2,12 +2,6 @@
 
 A dynamic platform that transforms how users discover local events and points of interest. Features an interactive map interface, event interaction tools, and AI-powered recommendations. Designed to connect communities and make exploring nearby happenings effortless.
 
-## Demo
-
-![Interactive Map](screenshots/map.png)
-![Event Discovery](screenshots/events.png)
-![Event Details](screenshots/event-details.png)
-
 ## Why It's Cool
 
 - **Interactive Map Interface**: Discover events on a dynamic map with detailed information, navigation options, and location-based filtering
