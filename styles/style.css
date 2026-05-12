@@ -302,13 +302,14 @@ body {
     position: absolute;
     right: 15px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(0deg);
     font-size: 18px;
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .collapsible.active .arrow {
-    transform: rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .content {
@@ -436,7 +437,7 @@ body {
     width: 80%;
 }
 
-.search-bar map input {
+.search-bar.map input {
     border: none;
     background: transparent;
     outline: none;
@@ -446,8 +447,8 @@ body {
     color: #555;
 }
 
-.menu-icon map,
-.search-icon map {
+.menu-icon.map,
+.search-icon.map {
     background: transparent;
     border: none;
     cursor: pointer;
