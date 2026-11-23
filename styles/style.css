@@ -508,3 +508,17 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+/* Keep the header nav inside the screen on phones */
+@media (max-width: 480px) {
+    .header,
+    .header-events {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}
