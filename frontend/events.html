@@ -146,7 +146,8 @@
                                     </label>
                                 </div>
 
-                                <button type="submit">Submit</button>
+                                <button type="button" id="submit-btn">Submit</button>
+                                <p id="form-note" role="status" style="margin-top:10px;color:#4e7252"></p>
                             </div>
                             <div class="image-container">
                                 <img src="../images/5.jpg" alt="Contact Image">
@@ -156,6 +157,11 @@
                 </body>
                 </html>
             `);
+            popup.document.close();
+            popup.document.getElementById('submit-btn').addEventListener('click', function () {
+                popup.document.getElementById('form-note').textContent =
+                    'This is a prototype: nothing is sent or stored.';
+            });
         }
     </script>
 
